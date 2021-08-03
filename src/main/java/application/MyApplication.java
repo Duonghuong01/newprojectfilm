@@ -1,5 +1,6 @@
 package application;
 
+import controller.CommentController;
 import controller.HomeController;
 import controller.IController;
 import controller.MovieController;
@@ -30,6 +31,7 @@ public class MyApplication {
 
         this.controllersByURL.put("/", new HomeController());
         this.controllersByURL.put("/movie", new MovieController());
+        this.controllersByURL.put("/comment", new CommentController());
 
     }
 
