@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ResourceBundleManager">
+    <file url="file://$PROJECT_DIR$/src/main/webapp/templates/fragments/frontend.properties" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/templates/fragments/frontend_fr.properties" />
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/src/main/webapp/templates/fragments/frontend.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/webapp/templates/fragments/frontend_fr.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/webapp/templates/fragments/frontend_vi.properties" />
+      <base-name>frontend</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/src/main/webapp/templates/fragments/frontend.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/webapp/templates/fragments/frontend_fr.properties" />
+      <base-name>frontend</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/src/main/webapp/templates/fragments/frontend.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/webapp/templates/fragments/frontend_fr.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/webapp/templates/fragments/frontend_vi.properties" />
+      <base-name>frontend</base-name>
+    </custom-resource-bundle>
+  </component>
+</project>

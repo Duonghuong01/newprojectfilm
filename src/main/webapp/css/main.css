@@ -1,13 +1,15 @@
-.carousel-item{
-    height:500px;
+.carousel-item {
+    height: 500px;
 }
+
 .card-img-top {
     width: 100%;
     height: 400px;
     object-fit: cover;
     background: gray;
 }
-.movie-title{
+
+.movie-title {
     height: 50px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -15,7 +17,8 @@
     -webkit-line-clamp: 2; /* number of lines to show */
     -webkit-box-orient: vertical;
 }
-.movie-description{
+
+.movie-description {
     height: 70px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -23,7 +26,8 @@
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
 }
-.movie-cast{
+
+.movie-cast {
     height: 50px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -31,8 +35,13 @@
     -webkit-line-clamp: 2; /* number of lines to show */
     -webkit-box-orient: vertical;
 }
-.movie-poster{
+
+.movie-poster {
     width: 100%;
     max-height: 500px;
     object-fit: cover;
+}
+
+[class*='mdl-shadow'] {
+    box-shadow: none;
 }

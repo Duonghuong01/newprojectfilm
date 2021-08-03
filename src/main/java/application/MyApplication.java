@@ -1,5 +1,6 @@
 package application;
 
+import controller.CommentController;
 import controller.HomeController;
 import controller.IController;
 import controller.MovieController;
@@ -22,6 +23,7 @@ public class MyApplication {
         templateResolver.setTemplateMode(TemplateMode.HTML);
         templateResolver.setPrefix("/templates/");
         templateResolver.setSuffix(".html");
+        templateResolver.setCharacterEncoding("UTF-8");
         templateResolver.setCacheTTLMs(Long.valueOf(3600000L));
         templateResolver.setCacheable(true);
         this.templateEngine = new TemplateEngine();
@@ -30,6 +32,8 @@ public class MyApplication {
 
         this.controllersByURL.put("/", new HomeController());
         this.controllersByURL.put("/movie", new MovieController());
+        this.controllersByURL.put("/comment", new CommentController());
+
 
     }
 
