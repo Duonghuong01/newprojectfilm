@@ -13,16 +13,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
-public class MovieController implements IController{
+public class MovieController extends MyController {
     @Override
     public void process(HttpServletRequest request, HttpServletResponse response, ServletContext servletContext, ITemplateEngine templateEngine) throws Exception {
-        WebContext ctx = new WebContext(request, response, servletContext, request.getLocale());
+        super.process(request, response, servletContext, templateEngine);
         String id = request.getParameter("id");
+        ctx.setVariable("url", "movie?id=" + id);
         Movie movie = new MovieService().getMovieByID(id);
         ctx.setVariable("movie", movie);
+
+
         FindIterable<Comment> comments = new CommentService().getComments("movie_id", movie.getId());
         ctx.setVariable("comments", comments);
-        templateEngine.process("movie", ctx, response.getWriter());
 
+        templateEngine.process("movie", ctx, response.getWriter());
     }
 }

@@ -14,7 +14,7 @@ public class AbsDAO {
 
     static MongoDatabase getDB() {
         if (db == null) {
-            ConnectionString connectionString = new ConnectionString("mongodb+srv://root:root@cluster0.lh5rj.mongodb.net/sample_mflix?retryWrites=true&w=majority");
+            ConnectionString connectionString = new ConnectionString("mongodb+srv://duonghuong01:duonghuong01@cluster0.gqd8v.mongodb.net");
             MongoClientSettings settings = MongoClientSettings.builder()
                     .applyConnectionString(connectionString)
                     .codecRegistry(fromRegistries(MongoClientSettings.getDefaultCodecRegistry(), fromProviders(PojoCodecProvider.builder().automatic(true).build())))
