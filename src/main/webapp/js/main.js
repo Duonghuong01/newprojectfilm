@@ -74,3 +74,4 @@ function handleSignedOutUser() {
     $(".guest").removeClass("d-none")
 }
 
+
